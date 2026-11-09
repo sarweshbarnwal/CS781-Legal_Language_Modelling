@@ -1,0 +1,12 @@
+{
+  "experiment": "sub04_model4_qlora_section",
+  "profile": "core",
+  "model": "model4-capacity-boundary-154m",
+  "quantization": "4bit_nf4",
+  "adaptation": "qlora",
+  "long_doc_strategy": "indian_legal_section_aware_distillation",
+  "primary_metric_bertscore_f1": 0.8119,
+  "secondary_metric_rouge1_f1": 0.2952,
+  "secondary_metric_rougeL_f1": 0.1735,
+  "evaluated_samples": 50
+}

@@ -1,0 +1,13 @@
+{
+  "submission_id": "sub01",
+  "model_backbone": "Model 4 Peak Capacity Boundary Decoder (153.9M)",
+  "adaptation_method": "Full Supervised Fine-Tuning (Anchor & KD Teacher)",
+  "best_dev_macro_f1": 0.3333,
+  "optimal_threshold_tau": 0.1,
+  "epochs": 2,
+  "effective_batch_size": 8,
+  "total_training_time_seconds": 24867.45,
+  "trainable_parameters": 154629761,
+  "total_backbone_parameters": 153937280,
+  "trainable_ratio_percent": 100.0
+}

@@ -1,0 +1,13 @@
+{
+  "submission_id": "sub02",
+  "model_backbone": "Model 1 Deep LLaMA Causal Decoder (134.7M)",
+  "adaptation_method": "True Multiplicative LoRMA (Compulsory PEFT)",
+  "best_dev_macro_f1": 0.6477,
+  "optimal_threshold_tau": 0.47,
+  "epochs": 1,
+  "effective_batch_size": 8,
+  "total_training_time_seconds": 14522.21,
+  "trainable_parameters": 1642241,
+  "total_backbone_parameters": 135750400,
+  "trainable_ratio_percent": 1.2098
+}

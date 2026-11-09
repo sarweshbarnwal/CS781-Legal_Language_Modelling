@@ -1,0 +1,94 @@
+{
+  "model_id": "model1-deep-llama-135m",
+  "adaptation": "True Multiplicative LORMA (0-Context Ablation Baseline)",
+  "best_dev_macro_f1": 0.3639,
+  "dev_loss": 1.6421,
+  "total_params": 135958301,
+  "trainable_params": 1256477,
+  "trainable_percentage": 0.9242,
+  "per_class": {
+    "Fact": {
+      "precision": 0.5396,
+      "recall": 0.5991,
+      "f1": 0.5678,
+      "support": 444
+    },
+    "Issue": {
+      "precision": 0.5333,
+      "recall": 0.5333,
+      "f1": 0.5333,
+      "support": 15
+    },
+    "ArgumentPetitioner": {
+      "precision": 0.5909,
+      "recall": 0.3575,
+      "f1": 0.4455,
+      "support": 400
+    },
+    "ArgumentRespondent": {
+      "precision": 0.3706,
+      "recall": 0.2316,
+      "f1": 0.2851,
+      "support": 272
+    },
+    "Statute": {
+      "precision": 0.6641,
+      "recall": 0.7083,
+      "f1": 0.6855,
+      "support": 120
+    },
+    "Dissent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "PrecedentReliedUpon": {
+      "precision": 0.4177,
+      "recall": 0.4094,
+      "f1": 0.4135,
+      "support": 254
+    },
+    "PrecedentNotReliedUpon": {
+      "precision": 0.1774,
+      "recall": 0.22,
+      "f1": 0.1964,
+      "support": 50
+    },
+    "PrecedentOverruled": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "RulingByLowerCourt": {
+      "precision": 0.2797,
+      "recall": 0.3235,
+      "f1": 0.3,
+      "support": 102
+    },
+    "RatioOfTheDecision": {
+      "precision": 0.4349,
+      "recall": 0.6055,
+      "f1": 0.5062,
+      "support": 403
+    },
+    "RulingByPresentCourt": {
+      "precision": 0.5385,
+      "recall": 0.5714,
+      "f1": 0.5545,
+      "support": 49
+    },
+    "None": {
+      "precision": 0.2195,
+      "recall": 0.2727,
+      "f1": 0.2432,
+      "support": 33
+    }
+  },
+  "training_time_minutes": 13.12,
+  "epochs": 5,
+  "batch_size": 64,
+  "lr_backbone": 0.0003,
+  "lr_head": 0.001
+}

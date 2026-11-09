@@ -1,0 +1,94 @@
+{
+  "model_id": "model2-wide-mistral-136m",
+  "adaptation": "AdaLoRA Adaptive Budget Allocation (init_r=24, target_r=12)",
+  "best_dev_macro_f1": 0.3424,
+  "dev_loss": 1.5152,
+  "total_params": 138090829,
+  "trainable_params": 2048413,
+  "trainable_percentage": 1.486,
+  "per_class": {
+    "Fact": {
+      "precision": 0.5466,
+      "recall": 0.6869,
+      "f1": 0.6088,
+      "support": 444
+    },
+    "Issue": {
+      "precision": 0.4286,
+      "recall": 0.2,
+      "f1": 0.2727,
+      "support": 15
+    },
+    "ArgumentPetitioner": {
+      "precision": 0.5578,
+      "recall": 0.4225,
+      "f1": 0.4808,
+      "support": 400
+    },
+    "ArgumentRespondent": {
+      "precision": 0.3624,
+      "recall": 0.1985,
+      "f1": 0.2565,
+      "support": 272
+    },
+    "Statute": {
+      "precision": 0.7333,
+      "recall": 0.825,
+      "f1": 0.7765,
+      "support": 120
+    },
+    "Dissent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "PrecedentReliedUpon": {
+      "precision": 0.5235,
+      "recall": 0.3504,
+      "f1": 0.4198,
+      "support": 254
+    },
+    "PrecedentNotReliedUpon": {
+      "precision": 0.2,
+      "recall": 0.42,
+      "f1": 0.271,
+      "support": 50
+    },
+    "PrecedentOverruled": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "RulingByLowerCourt": {
+      "precision": 0.1633,
+      "recall": 0.0784,
+      "f1": 0.106,
+      "support": 102
+    },
+    "RatioOfTheDecision": {
+      "precision": 0.461,
+      "recall": 0.66,
+      "f1": 0.5429,
+      "support": 403
+    },
+    "RulingByPresentCourt": {
+      "precision": 0.4,
+      "recall": 0.4898,
+      "f1": 0.4404,
+      "support": 49
+    },
+    "None": {
+      "precision": 0.32,
+      "recall": 0.2424,
+      "f1": 0.2759,
+      "support": 33
+    }
+  },
+  "training_time_minutes": 7.69,
+  "epochs": 5,
+  "batch_size": 32,
+  "lr_backbone": 0.00025,
+  "lr_head": 0.001
+}

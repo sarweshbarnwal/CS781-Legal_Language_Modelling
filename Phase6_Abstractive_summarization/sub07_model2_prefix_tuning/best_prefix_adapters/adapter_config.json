@@ -1,0 +1,18 @@
+{
+  "auto_mapping": null,
+  "base_model_name_or_path": "/kaggle/working/cs781_phase6/base_model2/model2-wide-mistral-136m",
+  "encoder_hidden_size": 896,
+  "inference_mode": true,
+  "init_weights": null,
+  "modules_to_save": null,
+  "num_attention_heads": 7,
+  "num_layers": 12,
+  "num_transformer_submodules": 1,
+  "num_virtual_tokens": 50,
+  "peft_type": "PREFIX_TUNING",
+  "peft_version": "0.21.2",
+  "prefix_projection": false,
+  "revision": null,
+  "task_type": "CAUSAL_LM",
+  "token_dim": 448
+}

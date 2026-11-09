@@ -1,0 +1,16 @@
+{
+  "submission_id": "s06",
+  "submission_name": "S6: Model 4 (Teacher) -> Model 3 (Student) Knowledge Distillation (Compulsory #2)",
+  "base_model": "model3-statutory-mha-110m",
+  "method": "distillation",
+  "method_description": "Knowledge Distillation from S1 (Model 4 Fine-Tuned Teacher, 153.9M) into Model 3 Student (109.5M)",
+  "hidden_size": 768,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 0.00025,
+  "head_learning_rate": 0.0005,
+  "batch_size": 32,
+  "epochs": 6,
+  "best_epoch": 5,
+  "purpose": "Fulfills compulsory Knowledge Distillation requirement with valid teacher-to-student capacity reduction."
+}

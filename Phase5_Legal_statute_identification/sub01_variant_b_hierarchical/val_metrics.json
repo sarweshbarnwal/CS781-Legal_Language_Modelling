@@ -1,0 +1,8 @@
+{
+  "macro_f1": 0.046906926406926404,
+  "micro_f1": 0.05025125628140704,
+  "subset_accuracy": 0.0,
+  "hamming_loss": 0.4725,
+  "macro_precision": 0.030219086469086463,
+  "macro_recall": 0.14333333333333334
+}

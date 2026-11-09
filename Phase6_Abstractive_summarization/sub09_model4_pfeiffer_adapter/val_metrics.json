@@ -1,0 +1,8 @@
+{
+  "experiment": "Phase6_Sub09_Model4_Pfeiffer_Adapter",
+  "profile": "core",
+  "primary_metric_bertscore_f1": -0.48144,
+  "secondary_metric_rouge1": 0.0,
+  "secondary_metric_rouge2": 0.0,
+  "secondary_metric_rougeL": 0.0
+}

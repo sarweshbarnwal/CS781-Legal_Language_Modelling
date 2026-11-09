@@ -1,0 +1,9 @@
+{
+  "experiment": "baseline_x0_lexical_bm25_tfidf",
+  "strategy": "BLENDED",
+  "dev_bm25_f1": 0.10227904391328516,
+  "dev_tfidf_f1": 0.39911061700944966,
+  "dev_best_f1": 0.39911061700944966,
+  "best_alpha": 0.0,
+  "test_queries_scored": 237
+}

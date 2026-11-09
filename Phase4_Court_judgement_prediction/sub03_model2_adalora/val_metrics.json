@@ -1,0 +1,17 @@
+{
+  "submission_id": "sub03_model2_adalora",
+  "model_backbone": "Model 2 Wide Mistral Style Decoder (136.0M)",
+  "adaptation_method": "AdaLoRA Dynamic Rank Allocation (r_init=24 -> r_target=12)",
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "best_dev_macro_f1": 0.6023719806162506,
+  "optimal_decision_threshold": 0.56,
+  "dev_loss": 0.7954428424221094,
+  "total_optimization_steps": 4674,
+  "orth_reg_weight": 0.5,
+  "epochs_trained": 1
+}

@@ -1,0 +1,27 @@
+{
+  "Model1_True_LoRMA": {
+    "bertscore_f1": -0.65802,
+    "rouge1": 0.00689,
+    "rougeL": 0.00423
+  },
+  "Model4_QLoRA_Section": {
+    "bertscore_f1": -0.69705,
+    "rouge1": 0.03091,
+    "rougeL": 0.01921
+  },
+  "Model3_KD_Distilled": {
+    "bertscore_f1": -0.64394,
+    "rouge1": 0.02658,
+    "rougeL": 0.01823
+  },
+  "Model4_Pfeiffer_Adapter": {
+    "bertscore_f1": -0.69705,
+    "rouge1": 0.03091,
+    "rougeL": 0.01921
+  },
+  "Master_Ensemble_Medoid": {
+    "bertscore_f1": -0.69705,
+    "rouge1": 0.03091,
+    "rougeL": 0.01921
+  }
+}

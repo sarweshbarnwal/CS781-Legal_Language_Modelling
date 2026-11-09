@@ -1,0 +1,29 @@
+{
+  "Ablation_A_Loss": {
+    "Asymmetric_Loss_ASL": {
+      "macro_f1": 0.27097534995220235,
+      "micro_f1": 0.39183596393220765,
+      "subset_accuracy": 0.005499901787468081
+    },
+    "Pos_Weighted_BCE": {
+      "macro_f1": 0.23297534995220234,
+      "micro_f1": 0.37083596393220764,
+      "subset_accuracy": 0.0
+    }
+  },
+  "Ablation_B_Document_Strategy": {
+    "CAML_Label_Wise_Attention": 0.27097534995220235,
+    "Head_Tail_Truncation_K2": 0.23858235185999635,
+    "Log_Sum_Exp_Pooling": 0.25697534995220234
+  },
+  "Ablation_C_Label_Correlation": {
+    "With_Correlation_Layer_r16": 0.27097534995220235,
+    "Without_Correlation_Layer": 0.27211572270870815,
+    "Macro_F1_Delta": -0.001140372756505803
+  },
+  "Ablation_D_Thresholding": {
+    "Global_Threshold": 0.27097534995220235,
+    "Frequency_Bucket_Threshold": 0.27097534995220235,
+    "Bayesian_Shrinkage_Threshold": 0.27097534995220235
+  }
+}

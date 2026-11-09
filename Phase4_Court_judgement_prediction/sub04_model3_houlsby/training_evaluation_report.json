@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "submission_id": "sub04_model3_houlsby",
+    "model_backbone": "Model 3 Statutory Precision Full-MHA Decoder (109.5M)",
+    "adaptation_method": "Houlsby Residual Bottleneck Adapters (d_bottleneck=56, SiLU)",
+    "adapter_locations": [
+      "post-self_attn.o_proj",
+      "post-mlp.down_proj"
+    ],
+    "best_dev_macro_f1": 0.6317222162683529,
+    "optimal_decision_threshold": 0.39,
+    "dev_loss": 0.8546445838192579,
+    "total_optimization_steps": 4674,
+    "epochs_trained": 1
+  },
+  "training_history": {
+    "train_loss": [
+      0.7284398044877087
+    ],
+    "dev_loss": [
+      0.8373522638030335
+    ],
+    "dev_macro_f1": [
+      0.6352601019419123
+    ]
+  }
+}

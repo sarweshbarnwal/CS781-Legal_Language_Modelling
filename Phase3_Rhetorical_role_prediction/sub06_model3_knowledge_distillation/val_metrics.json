@@ -1,0 +1,98 @@
+{
+  "model_id": "model3-statutory-mha-110m",
+  "adaptation": "Knowledge Distillation from Model 4 Teacher (153.9M -> 109.5M)",
+  "teacher_id": "model4-capacity-boundary-154m (Sub 01)",
+  "best_dev_macro_f1": 0.4559,
+  "dev_loss": 1.4285,
+  "total_params": 109737757,
+  "trainable_params": 109737757,
+  "trainable_percentage": 100.0,
+  "temperature": 2.0,
+  "alpha_ce": 0.4,
+  "alpha_kd": 0.6,
+  "per_class": {
+    "Fact": {
+      "precision": 0.7186,
+      "recall": 0.6959,
+      "f1": 0.7071,
+      "support": 444
+    },
+    "Issue": {
+      "precision": 0.5238,
+      "recall": 0.7333,
+      "f1": 0.6111,
+      "support": 15
+    },
+    "ArgumentPetitioner": {
+      "precision": 0.5608,
+      "recall": 0.4725,
+      "f1": 0.5129,
+      "support": 400
+    },
+    "ArgumentRespondent": {
+      "precision": 0.6211,
+      "recall": 0.3676,
+      "f1": 0.4619,
+      "support": 272
+    },
+    "Statute": {
+      "precision": 0.8739,
+      "recall": 0.8083,
+      "f1": 0.8398,
+      "support": 120
+    },
+    "Dissent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "PrecedentReliedUpon": {
+      "precision": 0.544,
+      "recall": 0.5354,
+      "f1": 0.5397,
+      "support": 254
+    },
+    "PrecedentNotReliedUpon": {
+      "precision": 0.3836,
+      "recall": 0.56,
+      "f1": 0.4553,
+      "support": 50
+    },
+    "PrecedentOverruled": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "RulingByLowerCourt": {
+      "precision": 0.4051,
+      "recall": 0.3137,
+      "f1": 0.3536,
+      "support": 102
+    },
+    "RatioOfTheDecision": {
+      "precision": 0.517,
+      "recall": 0.7916,
+      "f1": 0.6255,
+      "support": 403
+    },
+    "RulingByPresentCourt": {
+      "precision": 0.5,
+      "recall": 0.449,
+      "f1": 0.4731,
+      "support": 49
+    },
+    "None": {
+      "precision": 0.4737,
+      "recall": 0.2727,
+      "f1": 0.3462,
+      "support": 33
+    }
+  },
+  "training_time_minutes": 5.58,
+  "epochs": 5,
+  "batch_size": 32,
+  "lr_backbone": 0.0001,
+  "lr_head": 0.001
+}

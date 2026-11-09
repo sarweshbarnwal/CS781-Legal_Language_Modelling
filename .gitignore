@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Model weights & Large Checkpoints (hosted on Hugging Face Hub: sarweshbarnwal/CS781-Legal-Models)
+*.pt
+*.bin
+*.safetensors
+*.pth
+*.ckpt
+*.h5
+checkpoints/
+checkpoint-*/
+models_snapshot/
+
+# Large Datasets & Environment
+*.tar.gz
+*.7z
+phase5_data/
+data_phase5/
+work/
+.env
+.env.*
+kaggle.json
+**/kaggle.json
+
+# Logs & temp files
+*.log
+runs/
+wandb/
+*_cells.txt
+dump_*.py
+
+# Binary cache
+*.npy
+*.npz

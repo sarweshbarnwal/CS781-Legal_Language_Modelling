@@ -1,0 +1,16 @@
+{
+  "submission_id": "s03",
+  "submission_name": "S3: Model 1 Standard Additive LoRA (Controlled Ablation Baseline)",
+  "base_model": "model1-deep-llama-135m",
+  "method": "lora",
+  "method_description": "Standard Additive Low-Rank Adaptation (LoRA) [W = W_0 + (alpha/r)BA]",
+  "hidden_size": 768,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 0.0003,
+  "head_learning_rate": 0.0005,
+  "batch_size": 32,
+  "epochs": 5,
+  "best_epoch": 4,
+  "purpose": "Controlled ablation baseline comparing additive vs multiplicative PEFT on identical backbone."
+}

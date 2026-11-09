@@ -1,0 +1,11 @@
+{
+  "experiment": "sub02_model1_true_lorma",
+  "profile": "core",
+  "model": "model1-deep-llama-135m",
+  "adaptation": "true_multiplicative_lorma",
+  "long_doc_strategy": "hierarchical_two_stage",
+  "primary_metric_bertscore_f1": 0.7494,
+  "secondary_metric_rouge1_f1": 0.0,
+  "secondary_metric_rougeL_f1": 0.0,
+  "evaluated_samples": 50
+}

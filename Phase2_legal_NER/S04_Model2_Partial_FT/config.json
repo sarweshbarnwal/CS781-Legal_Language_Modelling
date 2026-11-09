@@ -1,0 +1,16 @@
+{
+  "submission_id": "s04",
+  "submission_name": "S4: Model 2 Partial Layer-Wise Fine-Tuning",
+  "base_model": "model2-wide-mistral-136m",
+  "method": "partial_ft",
+  "method_description": "Partial Layer-Wise FT (Embeddings + Layers 1-6 Frozen, Layers 7-12 + Head + Norm Unfrozen)",
+  "hidden_size": 896,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 0.0001,
+  "head_learning_rate": 0.0003,
+  "batch_size": 32,
+  "epochs": 5,
+  "best_epoch": 4,
+  "purpose": "Tests hypothesis of preserving lower syntactic representations while adapting upper semantic layers."
+}

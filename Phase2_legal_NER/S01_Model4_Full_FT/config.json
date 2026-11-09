@@ -1,0 +1,16 @@
+{
+  "submission_id": "s01",
+  "submission_name": "S1: Model 4 Full Supervised Fine-Tuning (Anchor & KD Teacher)",
+  "base_model": "model4-capacity-boundary-154m",
+  "method": "full_ft",
+  "method_description": "Full Supervised Fine-Tuning (100% of parameters unfrozen)",
+  "hidden_size": 896,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 2.5e-05,
+  "head_learning_rate": 0.0001,
+  "batch_size": 32,
+  "epochs": 5,
+  "best_epoch": 3,
+  "purpose": "Establishes performance upper-bound anchor and serves as Teacher Model for S6."
+}

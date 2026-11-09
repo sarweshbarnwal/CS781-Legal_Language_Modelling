@@ -1,0 +1,29 @@
+{
+  "experiment": "model1_LORA_bidirectional_window_1_target_span_joint",
+  "model_backbone": "model1-deep-llama-135m",
+  "architecture": "16-layer Deep LLaMA",
+  "adaptation": "LoRA (r=16, alpha=32.0, target=['q_proj', 'v_proj'])",
+  "val_macro_f1": 0.4078517163364953,
+  "val_macro_prec": 0.43172732767076244,
+  "val_macro_rec": 0.4107254261382644,
+  "val_macro_f1_present": 0.48200657385222173,
+  "val_loss": 1.6428336431554942,
+  "latency_median_ms": 1202.8290674999198,
+  "latency_mean_ms": 1150.1258391666627,
+  "per_class_f1": {
+    "Fact": 0.6510638297872341,
+    "Issue": 0.6153846153846154,
+    "ArgumentPetitioner": 0.4483306836248013,
+    "ArgumentRespondent": 0.3990719257540603,
+    "Statute": 0.7644787644787645,
+    "Dissent": 0.0,
+    "PrecedentReliedUpon": 0.4166666666666667,
+    "PrecedentNotReliedUpon": 0.33112582781456956,
+    "RulingByLowerCourt": 0.36363636363636365,
+    "RatioOfTheDecision": 0.5129682997118156,
+    "RulingByPresentCourt": 0.5531914893617021,
+    "None": 0.24615384615384617,
+    "macro avg": 0.4418393593645366,
+    "weighted avg": 0.5039013151958034
+  }
+}

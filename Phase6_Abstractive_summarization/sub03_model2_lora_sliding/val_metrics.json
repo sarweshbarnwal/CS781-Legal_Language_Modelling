@@ -1,0 +1,11 @@
+{
+  "experiment": "sub03_model2_lora_sliding",
+  "profile": "smoke",
+  "model": "model2-wide-mistral-136m",
+  "adaptation": "high_rank_lora_r64",
+  "long_doc_strategy": "overlapping_sliding_window_density",
+  "primary_metric_bertscore_f1": 0.7349,
+  "secondary_metric_rouge1_f1": 0.1388,
+  "secondary_metric_rougeL_f1": 0.1087,
+  "evaluated_samples": 5
+}

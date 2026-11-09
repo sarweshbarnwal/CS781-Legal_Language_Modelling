@@ -1,0 +1,94 @@
+{
+  "model_id": "model2-wide-mistral-136m",
+  "adaptation": "IA3 Vector Scaling (target: k, v, down_proj)",
+  "best_dev_macro_f1": 0.3644,
+  "dev_loss": 1.5343,
+  "total_params": 136323229,
+  "trainable_params": 280861,
+  "trainable_percentage": 0.2064,
+  "per_class": {
+    "Fact": {
+      "precision": 0.5487,
+      "recall": 0.723,
+      "f1": 0.6239,
+      "support": 444
+    },
+    "Issue": {
+      "precision": 0.2857,
+      "recall": 0.2667,
+      "f1": 0.2759,
+      "support": 15
+    },
+    "ArgumentPetitioner": {
+      "precision": 0.6497,
+      "recall": 0.32,
+      "f1": 0.4288,
+      "support": 400
+    },
+    "ArgumentRespondent": {
+      "precision": 0.479,
+      "recall": 0.2941,
+      "f1": 0.3645,
+      "support": 272
+    },
+    "Statute": {
+      "precision": 0.7153,
+      "recall": 0.8583,
+      "f1": 0.7803,
+      "support": 120
+    },
+    "Dissent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "PrecedentReliedUpon": {
+      "precision": 0.5179,
+      "recall": 0.3425,
+      "f1": 0.4123,
+      "support": 254
+    },
+    "PrecedentNotReliedUpon": {
+      "precision": 0.1556,
+      "recall": 0.42,
+      "f1": 0.227,
+      "support": 50
+    },
+    "PrecedentOverruled": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "RulingByLowerCourt": {
+      "precision": 0.3571,
+      "recall": 0.2941,
+      "f1": 0.3226,
+      "support": 102
+    },
+    "RatioOfTheDecision": {
+      "precision": 0.4657,
+      "recall": 0.6228,
+      "f1": 0.5329,
+      "support": 403
+    },
+    "RulingByPresentCourt": {
+      "precision": 0.4746,
+      "recall": 0.5714,
+      "f1": 0.5185,
+      "support": 49
+    },
+    "None": {
+      "precision": 0.2308,
+      "recall": 0.2727,
+      "f1": 0.25,
+      "support": 33
+    }
+  },
+  "training_time_minutes": 6.91,
+  "epochs": 6,
+  "batch_size": 32,
+  "lr_backbone": 0.0015,
+  "lr_head": 0.001
+}

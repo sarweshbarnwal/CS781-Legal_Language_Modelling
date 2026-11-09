@@ -1,0 +1,10 @@
+{
+  "experiment": "sub01_model3_full_ft_baseline",
+  "profile": "core",
+  "model": "model3-statutory-mha-110m",
+  "technique": "full_fine_tuning",
+  "primary_metric_bertscore_f1": 0.8128,
+  "secondary_metric_rouge1_f1": 0.2918,
+  "secondary_metric_rougeL_f1": 0.1762,
+  "evaluated_samples": 50
+}

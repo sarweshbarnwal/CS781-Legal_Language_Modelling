@@ -1,0 +1,10 @@
+{
+  "experiment": "r2_model1_lorma",
+  "technique": "True LORMA (Compulsory)",
+  "backbone": "Model 1 Deep LLaMA 135M",
+  "dev_micro_f1_at_7": 0.2868260144524736,
+  "dev_precision_at_7": 0.31234866828087166,
+  "dev_recall_at_7": 0.26515930113052416,
+  "lorma_adapter_params": 1048576,
+  "total_trainable_params": 1638789
+}

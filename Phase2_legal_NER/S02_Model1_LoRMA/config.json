@@ -1,0 +1,16 @@
+{
+  "submission_id": "s02",
+  "submission_name": "S2: Model 1 True Multiplicative LoRMA Adaptation (Compulsory #1)",
+  "base_model": "model1-deep-llama-135m",
+  "method": "lorma",
+  "method_description": "True Low-Rank Multiplicative Adaptation (LoRMA) [W = (I + (alpha/r)BA)W_0]",
+  "hidden_size": 768,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 0.0003,
+  "head_learning_rate": 0.0005,
+  "batch_size": 32,
+  "epochs": 5,
+  "best_epoch": 4,
+  "purpose": "Fulfills compulsory LoRMA requirement with true multiplicative parameter adaptation."
+}

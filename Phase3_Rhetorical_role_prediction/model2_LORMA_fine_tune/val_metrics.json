@@ -1,0 +1,29 @@
+{
+  "experiment": "model2_LORMA_bidirectional_window_1_target_span_joint",
+  "model_backbone": "model2-wide-mistral-136m",
+  "architecture": "12-layer Wide Mistral",
+  "adaptation": "LoRMA (r=16, alpha=32.0, target=['q_proj', 'v_proj'])",
+  "val_macro_f1": 0.3763581242433855,
+  "val_macro_prec": 0.37353084604834064,
+  "val_macro_rec": 0.4046937339965576,
+  "val_macro_f1_present": 0.44478687410581924,
+  "val_loss": 1.5528174992702923,
+  "latency_median_ms": 1086.9676524999932,
+  "latency_mean_ms": 1042.1565635333384,
+  "per_class_f1": {
+    "Fact": 0.6402569593147751,
+    "Issue": 0.4,
+    "ArgumentPetitioner": 0.34797891036906853,
+    "ArgumentRespondent": 0.45137614678899085,
+    "Statute": 0.7661290322580645,
+    "Dissent": 0.0,
+    "PrecedentReliedUpon": 0.45137614678899085,
+    "PrecedentNotReliedUpon": 0.2857142857142857,
+    "RulingByLowerCourt": 0.3404255319148936,
+    "RatioOfTheDecision": 0.45905707196029777,
+    "RulingByPresentCourt": 0.5208333333333334,
+    "None": 0.22950819672131148,
+    "macro avg": 0.4077213012636676,
+    "weighted avg": 0.478958316307906
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "r3_model2_partial_ft",
+  "technique": "Partial Fine-Tuning (Upper 6 Layers)",
+  "backbone": "Model 2 Wide Mistral 136M",
+  "dev_micro_f1_at_7": 0.19121734296831572,
+  "dev_precision_at_7": 0.20823244552058112,
+  "dev_recall_at_7": 0.17677286742034942,
+  "trainable_params": 54374149,
+  "pct_trainable": 39.767276427706875
+}

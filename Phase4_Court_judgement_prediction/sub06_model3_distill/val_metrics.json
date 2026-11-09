@@ -1,0 +1,13 @@
+{
+  "submission_id": "sub06_model3_distill",
+  "student_model_backbone": "Model 3 Statutory Precision Full-MHA Decoder (109.5M)",
+  "teacher_model_backbone": "Model 4 Peak Capacity Boundary Decoder (153.9M)",
+  "adaptation_method": "Knowledge Distillation (BCE + MSE Temperature Scaled Soft Logits)",
+  "temperature": 2.0,
+  "capacity_reduction_percent": 28.8,
+  "best_dev_macro_f1": 0.6394233962480087,
+  "optimal_decision_threshold": 0.46,
+  "dev_loss": 0.7888163357403437,
+  "total_optimization_steps": 9348,
+  "epochs_trained": 2
+}

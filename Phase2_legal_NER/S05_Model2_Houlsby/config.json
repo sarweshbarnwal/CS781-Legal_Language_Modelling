@@ -1,0 +1,16 @@
+{
+  "submission_id": "s05",
+  "submission_name": "S5: Model 2 Houlsby Residual Bottleneck Adapters",
+  "base_model": "model2-wide-mistral-136m",
+  "method": "houlsby",
+  "method_description": "Houlsby Residual Bottleneck Adapters (wrapping self_attn and mlp sublayers, bottleneck 56)",
+  "hidden_size": 896,
+  "num_labels": 25,
+  "tagging_scheme": "25-Class BIO",
+  "learning_rate": 0.0004,
+  "head_learning_rate": 0.0006,
+  "batch_size": 32,
+  "epochs": 5,
+  "best_epoch": 3,
+  "purpose": "Tests modular parameter-efficient insertion on wide-dimension layers using the two-adapter Houlsby architecture."
+}

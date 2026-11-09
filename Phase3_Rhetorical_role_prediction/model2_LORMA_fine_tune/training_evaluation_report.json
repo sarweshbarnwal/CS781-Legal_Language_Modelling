@@ -1,0 +1,144 @@
+{
+  "model_name": "Model 2: Wide Mistral-Style Long-Flow Decoder (~130M) with LoRMA Fine-Tuning - Solution 2",
+  "run_tag": "bidirectional_window_1_target_span_joint",
+  "is_official_submission": true,
+  "domain_evaluation_note": "Model trained jointly on CL + IT; evaluated on full test set (CL + IT)",
+  "adaptation_technique": "LoRMA (Identity-Preserving Low-Rank Multiplicative Adaptation, Bihany, Patel & Modi, ACL 2025)",
+  "lorma_formulation": "Multiplicative update on layer activations: h = W_0 x + (alpha/r)*B @ A @ (W_0 x) = (I + (alpha/r)*B @ A) @ (W_0 x)",
+  "lorma_rank": 16,
+  "lorma_alpha": 32.0,
+  "attention_mode": "bidirectional",
+  "context_mode": "window_1",
+  "pooling_mode": "target_span",
+  "domain_training_mode": "joint",
+  "full_fine_tuning": false,
+  "class_weights_active": true,
+  "efficiency_profile": {
+    "training_wall_clock_seconds": 1010.05,
+    "peak_gpu_memory_allocated_mb": 3960.11,
+    "inference_median_batch_latency_ms": 1086.97,
+    "total_parameters": 136966157,
+    "trainable_parameters": 923789,
+    "frozen_parameters": 136042368,
+    "trainable_parameter_pct": 0.674,
+    "frozen_parameter_pct": 99.326
+  },
+  "critical_role_confusions": {
+    "Ratio_vs_RulingPresent": {
+      "RatioOfTheDecision_predicted_as_RulingByPresentCourt": "7/403 (1.7%)",
+      "RulingByPresentCourt_predicted_as_RatioOfTheDecision": "12/49 (24.5%)"
+    },
+    "Precedent_Variants": {
+      "ReliedUpon_as_NotRelied": "15/254",
+      "NotRelied_as_ReliedUpon": "14/50",
+      "Overruled_as_ReliedUpon": "0/0"
+    },
+    "Petitioner_vs_Respondent": {
+      "ArgumentPetitioner_predicted_as_ArgumentRespondent": "103/400 (25.8%)",
+      "ArgumentRespondent_predicted_as_ArgumentPetitioner": "38/272 (14.0%)"
+    },
+    "Fact_vs_LowerCourt": {
+      "Fact_predicted_as_RulingByLowerCourt": "39/444 (8.8%)",
+      "RulingByLowerCourt_predicted_as_Fact": "20/102 (19.6%)"
+    }
+  },
+  "validation_results_dev_set": {
+    "val_macro_f1_all_13": 0.3763581242433855,
+    "val_macro_prec_all_13": 0.37353084604834064,
+    "val_macro_rec_all_13": 0.4046937339965576,
+    "val_macro_f1_present": 0.44478687410581924,
+    "cl_macro_f1": 0.38136771252837576,
+    "it_macro_f1": 0.4912175870586207,
+    "zero_support_classes": [
+      "Dissent",
+      "PrecedentOverruled"
+    ]
+  },
+  "classification_report": {
+    "Fact": {
+      "precision": 0.610204081632653,
+      "recall": 0.6734234234234234,
+      "f1-score": 0.6402569593147751,
+      "support": 444.0
+    },
+    "Issue": {
+      "precision": 0.3,
+      "recall": 0.6,
+      "f1-score": 0.4,
+      "support": 15.0
+    },
+    "ArgumentPetitioner": {
+      "precision": 0.5857988165680473,
+      "recall": 0.2475,
+      "f1-score": 0.34797891036906853,
+      "support": 400.0
+    },
+    "ArgumentRespondent": {
+      "precision": 0.45054945054945056,
+      "recall": 0.4522058823529412,
+      "f1-score": 0.45137614678899085,
+      "support": 272.0
+    },
+    "Statute": {
+      "precision": 0.7421875,
+      "recall": 0.7916666666666666,
+      "f1-score": 0.7661290322580645,
+      "support": 120.0
+    },
+    "Dissent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "PrecedentReliedUpon": {
+      "precision": 0.422680412371134,
+      "recall": 0.484251968503937,
+      "f1-score": 0.45137614678899085,
+      "support": 254.0
+    },
+    "PrecedentNotReliedUpon": {
+      "precision": 0.23684210526315788,
+      "recall": 0.36,
+      "f1-score": 0.2857142857142857,
+      "support": 50.0
+    },
+    "RulingByLowerCourt": {
+      "precision": 0.26666666666666666,
+      "recall": 0.47058823529411764,
+      "f1-score": 0.3404255319148936,
+      "support": 102.0
+    },
+    "RatioOfTheDecision": {
+      "precision": 0.45905707196029777,
+      "recall": 0.45905707196029777,
+      "f1-score": 0.45905707196029777,
+      "support": 403.0
+    },
+    "RulingByPresentCourt": {
+      "precision": 0.5319148936170213,
+      "recall": 0.5102040816326531,
+      "f1-score": 0.5208333333333334,
+      "support": 49.0
+    },
+    "None": {
+      "precision": 0.25,
+      "recall": 0.21212121212121213,
+      "f1-score": 0.22950819672131148,
+      "support": 33.0
+    },
+    "accuracy": 0.48132586367880487,
+    "macro avg": {
+      "precision": 0.404658416552369,
+      "recall": 0.43841821182960405,
+      "f1-score": 0.4077213012636676,
+      "support": 2142.0
+    },
+    "weighted avg": {
+      "precision": 0.5075064655528606,
+      "recall": 0.48132586367880487,
+      "f1-score": 0.478958316307906,
+      "support": 2142.0
+    }
+  }
+}
